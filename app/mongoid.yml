@@ -1,0 +1,10 @@
+development:
+  clients:
+    default:
+      database: development
+      hosts:
+        - <%= ENV['MONGO_HOST'] %>
+      options:
+        user: <%= ENV['MONGO_USER'] %>
+        password: <%= ENV['MONGO_PASSWORD'] %>
+        auth_source: admin
